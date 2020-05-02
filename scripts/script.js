@@ -23,6 +23,7 @@ function reset() {
     document.getElementById('user_score').value = "0";
     document.getElementById('your_turn').value = "";
     document.getElementById('computer_turn').value = "";
+    document.getElementById('Reset').style.visibility = "hidden";
 
 }
 
