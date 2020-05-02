@@ -1,0 +1,53 @@
+<head>
+    <link id = "mini_logo_at_title" rel="title logo icon" href="images/title_logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <script src="scripts/script.js"></script>
+    <title>
+        RPS Game
+    </title>
+</head>
+<body>
+    <div class = "main">
+        <div class = "name-game"> Rock Paper Scissors! <br>
+            The game lasts 5 rounds.</div>
+        <div class = "playground">
+            <div class="rock">
+                <button id = "rock" onclick="start('rock');"><img src="images/rock.png" alt="rock image" height="200px" width="200px" ></button>
+            </div>
+            <div class="paper">
+                <button id = "paper" onclick="start('paper');"><img src="images/paper.png" alt="paper image" height="200px" width="200px" ></button>
+            </div>
+            <div class="scissors">
+                <button id = "scissors" onclick="start('scissors');"><img src="images/scissors.png" alt="scissors image" height="200px" width="200px" ></button>
+            </div>
+
+        </div>
+        <div class="results" >
+            <div class = "you">
+                You:
+                <label>
+                    <input class = "round_result" type="text" name="your_turn" id="your_turn" value="" disabled/>
+                </label>
+            </div>
+            <div class = "score">
+                Score:
+                <label>
+                    <input class = "score" type="text" name="computer_score" id="computer_score" value="0" disabled/>
+                    <span>&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+                    <input class = "score" type="text" name="user_score" value="0" id="user_score" disabled/>                    
+                </label>
+                <button id = "Reset" onclick="reset();">Reset</button>
+            </div>
+            <div class = "computer">
+                Computer:
+                <label>
+                    <input class = "round_result" type="text" name="computer_turn" id="computer_turn" value="" disabled/>
+                </label>
+            </div>  
+        </div>
+
+
+    </div>
+
+</body>
